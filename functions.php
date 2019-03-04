@@ -11,7 +11,7 @@ function portfolio_scripts(){
 	wp_register_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js',
 		array(), "3.1.1", true);
 
-	//Registra o app.js 
+	//Registra o arquivo .js
 	wp_register_script( 'app', get_template_directory_uri() . '/js/app.js',
 		array( 'jquery' ), "1.0", true);
 
@@ -43,7 +43,7 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 add_theme_support('menus');
 
 
- /********* SVG *****************/
+ /* Função para permitir envio de SVG */
 
 function cc_mime_types($mimes) {
        $mimes['svg'] = 'image/svg+xml';

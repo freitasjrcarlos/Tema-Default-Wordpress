@@ -4,9 +4,9 @@
 					<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/images/ico/logo.png">
 				</div>
 				<div class="contatos-footer">
-					<h3>Vamos conversar?</h3>
-					<h4><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ico/whats.svg">51 - 9.8186.0646</h4>
-					<h4><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ico/email.svg">carlos.freitas@turtleagencia.com.br</h4>
+					<h3>Teste</h3>
+					<h4><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ico/whats.svg">51 - 999999999</h4>
+					<h4><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ico/email.svg">email@email.com</h4>
 				</div>
 				<div class="social-footer">
 					<h3>Redes sociais</h3>
@@ -17,7 +17,7 @@
 			</div>
 
 			<div class="copy">
-				<p>© <?php echo date("Y"); ?> Carlos Freitas. Todos os direitos reservados.</p>
+				<p>© <?php echo date("Y"); ?> Seu site </p>
 			</div>
 		</footer>
 	 <?php wp_footer(); ?> <!-- Tag necessária para página ser reconhecida como Footer-->
