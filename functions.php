@@ -52,4 +52,34 @@ function cc_mime_types($mimes) {
 add_filter('upload_mimes', 'cc_mime_types');
 
 
+
+/******* Editar  Tela de Login   ********/
+function custom_login_css() {
+	echo '<link rel="stylesheet" type="text/css" href="'.get_stylesheet_directory_uri().'/style.css"/>';
+	}
+	add_action('login_head', 'custom_login_css');
+
+
+	//custom admin login logo
+function custom_login_logo() {
+	echo '<style type="text/css">
+		h1 a { background-image: url(' .get_bloginfo('template_directory').'/dist/images/ico/logo.png) !important;}
+	</style>';
+}
+add_action('login_head', 'custom_login_logo');
+
+
+/*Função que altera a URL, trocando pelo endereço do seu site*/
+function my_login_logo_url() {
+	return get_bloginfo( 'url' );
+	}
+	add_filter( 'login_headerurl', 'my_login_logo_url' );
+	 
+	/*Função que adiciona o nome do seu site, no momento que o mouse passa por cima da logo*/
+	function my_login_logo_url_title() {
+	return 'Portfólio - Voltar para Home';
+	}
+	add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
 ?>
